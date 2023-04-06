@@ -1,3 +1,4 @@
+// LIBRARY
 import {
   FaWindows,
   FaPlaystation,
@@ -10,8 +11,10 @@ import { MdPhoneIphone } from 'react-icons/md'; //md => material design
 import { SiNintendo } from 'react-icons/si';
 import { BsGlobe } from 'react-icons/bs'; //bs => bootstrap
 import { HStack, Icon } from '@chakra-ui/react';
-import { Platform } from '../hooks/useGames';
 import { IconType } from 'react-icons';
+
+// CUSTOM HOOKS
+import { Platform } from '../hooks/useGames';
 
 interface Props {
   platforms: Platform[];
