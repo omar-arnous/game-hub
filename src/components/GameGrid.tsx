@@ -5,12 +5,11 @@ import { GameQuery } from '../App';
 
 // COMPONENTS
 import GameCard from './GameCard';
-import GameCardSkeleton from './GameCardSkeleton';
 import GameCardContainer from './GameCardContainer';
+import GameCardSkeleton from './GameCardSkeleton';
 
 // CUSTOM HOOKS
-import { Genre } from '../hooks/useGenres';
-import useGames, { Platform } from '../hooks/useGames';
+import useGames from '../hooks/useGames';
 
 interface Props {
   gameQuery: GameQuery;
