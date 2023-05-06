@@ -6,7 +6,7 @@
 
 ---
 
-> ### This app built using vite bundler, to run the app open the command and run:
+> ## This app built using vite bundler, to run the app open the command and run
 >
 > ---
 >
