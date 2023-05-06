@@ -7,7 +7,7 @@ import CriticScore from './CriticScore';
 
 // CUSTOM HOOKS and SERVICES
 import getCroppedImageUrl from '../services/image-url';
-import { Game } from '../entities/Game';
+import Game from '../entities/Game';
 import Emoji from './Emoji';
 import { Link } from 'react-router-dom';
 
