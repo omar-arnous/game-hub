@@ -1,9 +1,14 @@
 import { Box, Button, Heading, Text } from '@chakra-ui/react';
-import { Link, isRouteErrorResponse, useRouteError } from 'react-router-dom';
+import {
+  isRouteErrorResponse,
+  useRouteError,
+  useNavigate,
+} from 'react-router-dom';
 import Navbar from '../components/NavBar';
 
 const ErrorPage = () => {
   const error = useRouteError();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -16,9 +21,7 @@ const ErrorPage = () => {
             : 'An unexpected error occured.'}
         </Text>
         <Box paddingTop={5}>
-          <Button>
-            <Link to="/">Back to Home</Link>
-          </Button>
+          <Button onClick={() => navigate('/')}>Back To Home</Button>
         </Box>
       </Box>
     </>
